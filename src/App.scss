@@ -1,0 +1,9 @@
+@import "./responsive/mixIn";
+.App {
+  width: 100%;
+}
+@include mobile {
+  .app {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+.filterReset_container {
+  display: flex;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.filterReset_icon {
+  width: 1rem;
+  height: 1rem;
+}
+.filterReset_text {
+  width: 3.625rem;
+  height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: #2196f3;
+  margin-left: 0.75rem;
+}

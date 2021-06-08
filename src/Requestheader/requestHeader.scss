@@ -1,0 +1,29 @@
+@import "../responsive/mixIn";
+.requestHeader_container {
+  margin-top: 2.5rem;
+}
+.requestHeader_first {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.requestHeader_second {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #323d45;
+}
+@include mobile {
+  .requestHeader_container {
+    margin-top: 1.5rem;
+  }
+  .requestHeader_first {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  .requestHeader_second {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #323d45;
+  }
+}

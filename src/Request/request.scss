@@ -1,0 +1,259 @@
+@import "../responsive/mixIn";
+.request {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin-bottom: 3.75rem;
+  align-items: center;
+}
+.request_Container {
+  width: 22.875rem;
+  height: 22.25rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 1.5rem 1rem 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.request_Select {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.request_Header {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e5e5;
+}
+.request_Title {
+  font-size: 1.1875rem;
+  line-height: 24px;
+  font-weight: bold;
+  width: 15rem;
+}
+.request_client {
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+.request_headerDetail {
+  display: flex;
+}
+.request_status {
+  display: flex;
+  width: 3.125rem;
+  height: 24px;
+  padding: 0.125rem 0.5rem;
+  margin-left: 3rem;
+  border: 1px solid #ffa000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  color: #ffa000;
+}
+.request_due {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #939fa5;
+  margin-bottom: 1rem;
+}
+.request_drawing {
+  display: flex;
+  margin-top: 2rem;
+}
+.request_drawingTitle {
+  font-size: 0.875rem;
+  color: #323d45;
+  width: 4.375rem;
+  height: 20px;
+}
+.request_drawingCount {
+  font-size: 14px;
+  font-weight: bold;
+  color: #323d45;
+  margin-left: 2rem;
+}
+.request_amount {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.request_amountTitle {
+  font-size: 0.875rem;
+  color: #323d45;
+  width: 4.375rem;
+  height: 20px;
+}
+.request_amountCount {
+  font-size: 14px;
+  font-weight: bold;
+  color: #323d45;
+  margin-left: 2rem;
+}
+.request_processing {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.request_processingTitle {
+  font-size: 0.875rem;
+  color: #323d45;
+  width: 4.375rem;
+  height: 20px;
+}
+.request_processingMethod {
+  font-size: 14px;
+  font-weight: bold;
+  color: #323d45;
+  margin-left: 2rem;
+}
+.request_material {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.request_materialTitle {
+  font-size: 0.875rem;
+  color: #323d45;
+  width: 4.375rem;
+  height: 20px;
+}
+.request_materialList {
+  font-size: 14px;
+  font-weight: bold;
+  color: #323d45;
+  margin-left: 2rem;
+}
+.request_button {
+  margin-top: 2.375rem;
+}
+@include mobile {
+  .request {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-bottom: 3.75rem;
+    align-items: center;
+  }
+  .request_Container {
+    width: 20rem;
+    height: 21.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 1.5rem 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .request_Select {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .request_Header {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #e5e5e5;
+  }
+  .request_Title {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: bold;
+    width: 15rem;
+  }
+  .request_client {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+  .request_headerDetail {
+    display: flex;
+  }
+  .request_status {
+    display: flex;
+    width: 3.125rem;
+    height: 1.5rem;
+    padding: 0.125rem 0.5rem;
+    margin-left: 1rem;
+    border: 1px solid #ffa000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: #ffa000;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .request_due {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #939fa5;
+    margin-bottom: 1rem;
+  }
+  .request_drawing {
+    display: flex;
+    margin-top: 2rem;
+  }
+  .request_drawingTitle {
+    font-size: 0.875rem;
+    color: #323d45;
+    width: 4.375rem;
+    height: 20px;
+  }
+  .request_drawingCount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #323d45;
+    margin-left: 2rem;
+  }
+  .request_amount {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  .request_amountTitle {
+    font-size: 0.875rem;
+    color: #323d45;
+    width: 4.375rem;
+    height: 20px;
+  }
+  .request_amountCount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #323d45;
+    margin-left: 2rem;
+  }
+  .request_processing {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  .request_processingTitle {
+    font-size: 0.875rem;
+    color: #323d45;
+    width: 4.375rem;
+    height: 20px;
+  }
+  .request_processingMethod {
+    font-size: 14px;
+    font-weight: bold;
+    color: #323d45;
+    margin-left: 2rem;
+  }
+  .request_material {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  .request_materialTitle {
+    font-size: 0.875rem;
+    color: #323d45;
+    width: 4.375rem;
+    height: 20px;
+  }
+  .request_materialList {
+    font-size: 14px;
+    font-weight: bold;
+    color: #323d45;
+    margin-left: 2rem;
+  }
+  .request_button {
+    margin-top: 2.375rem;
+  }
+}

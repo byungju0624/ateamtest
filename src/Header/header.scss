@@ -1,0 +1,84 @@
+@import "../responsive/mixIn";
+
+.header_Container {
+  width: 100%;
+  height: 4.375rem;
+  background-color: #1565c0;
+  display: flex;
+  justify-content: space-between;
+}
+.header_hamburger {
+  display: none;
+}
+.header_Logo {
+  margin-top: 1.5625rem;
+  margin-left: 2.5rem;
+}
+.header_image {
+  width: 9.5625rem;
+  height: 1.25rem;
+}
+.header_vector {
+  width: 1.041875rem;
+  height: 0.9375rem;
+}
+.header_SignIn {
+  display: flex;
+  margin-top: 1.5625rem;
+}
+.header_Company {
+  display: flex;
+  &::after {
+    content: "|";
+    color: #ffffff;
+  }
+}
+.header_companyName {
+  width: 4.1875rem;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+.header_signout {
+  width: 4.1875rem;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  margin-left: 2rem;
+  margin-right: 2.5rem;
+}
+@include mobile {
+  .header_Container {
+    width: 100%;
+    height: 2.75rem;
+    background-color: #1565c0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header_hamburger {
+    display: block;
+    width: 1.125rem;
+    height: 0.75rem;
+    margin: 1rem 0 1rem 1.4375rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .header_image {
+    width: 5.7375rem;
+    height: 0.75rem;
+  }
+  .header_Logo {
+    margin-top: 0.9rem;
+    margin-left: 1.1875rem;
+  }
+  .header_SignIn {
+    display: none;
+  }
+}
