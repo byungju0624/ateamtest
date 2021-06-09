@@ -1,8 +1,7 @@
 import React, { useState, useContext, useRef } from "react";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import "./header.scss";
-const Header = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Header = ({ isOpen, setIsOpen }) => {
   const [isVisible, setIsVisible] = useState(() => {
     return isOpen ? true : false;
   });
@@ -13,8 +12,9 @@ const Header = (props) => {
         className="header_hamburger"
         src={require("../image/menu_24px.png").default}
         alt="hamburger"
+        onClick={() => setIsOpen(true)}
       />
-
+      {isOpen === true && <HamburgerMenu setIsOpen={setIsOpen} />}
       <div className="header_Logo">
         <img
           className="header_image"

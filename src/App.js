@@ -6,7 +6,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 function App() {
   const [data, setData] = useState([]);
-
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const getData = async () => {
       const config = {
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <Request data={data} />
     </div>
   );

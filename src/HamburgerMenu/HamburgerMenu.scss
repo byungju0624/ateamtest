@@ -1,0 +1,60 @@
+@import "../responsive/mixIn";
+
+.hamburger_container {
+  width: 18.75rem;
+  height: 100%;
+  background-color: white;
+  left: -18.75rem;
+  position: fixed;
+  z-index: 1;
+  transition: all 1s;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.hamburger_logo {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e5e5;
+}
+.hamburger_logoImage {
+  width: 5.6875rem;
+  height: 0.75rem;
+}
+.hamburger_company {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 1.875rem;
+}
+.hamburger_companyImage {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-right: 0.5rem;
+}
+.hamburger_companyText {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.hamburger_signout {
+  margin-left: 2rem;
+  margin-top: 1.875rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.hamburger_close {
+  position: absolute;
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  &:hover {
+    cursor: pointer;
+  }
+}
